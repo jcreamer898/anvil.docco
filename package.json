@@ -1,0 +1,17 @@
+{
+  "author": "Jonathan Creamer <jcreamer@appendto.com> (http://jcreamerlive.com)",
+  "name": "anvil.docco",
+  "description": "Docco plugin for anvil.js",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jcreamer898/anvil.docco.git"
+  },
+  "engines": {
+    "node": "~0.8.3"
+  },
+  "main": "./lib/plugin.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {}
+}
