@@ -2,7 +2,7 @@
 
 </pre></div>             </td>           </tr>                               <tr id="section-2">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-2">&#182;</a>               </div>               <h3>anvil.docco</h3>
 
-<p>author: Jonathan Creamer</p>             </td>             <td class="code">               <div class="highlight"><pre>
+<p>Jonathan Creamer</p>             </td>             <td class="code">               <div class="highlight"><pre>
 <span class="kd">var</span> <span class="nx">doccoFactory</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">anvil</span> <span class="p">)</span> <span class="p">{</span>
     <span class="k">return</span> <span class="nx">anvil</span><span class="p">.</span><span class="nx">plugin</span><span class="p">({</span>
         <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;anvil.docco&quot;</span><span class="p">,</span>
@@ -13,7 +13,7 @@
         <span class="nx">output</span><span class="o">:</span> <span class="s2">&quot;./docs/&quot;</span><span class="p">,</span>
         <span class="nx">fileList</span><span class="o">:</span> <span class="p">[],</span>
         <span class="nx">commander</span><span class="o">:</span> <span class="p">[</span>
-            <span class="p">[</span><span class="s2">&quot;-d, --docco&quot;</span><span class="p">,</span> <span class="s2">&quot;document all files&quot;</span><span class="p">]</span>
+            <span class="p">[</span><span class="s2">&quot;-d, --docco&quot;</span><span class="p">,</span> <span class="s2">&quot;document all files, output them to /docs&quot;</span><span class="p">]</span>
         <span class="p">],</span>
 </pre></div>             </td>           </tr>                               <tr id="section-3">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-3">&#182;</a>               </div>               <p>Configure the plugin</p>             </td>             <td class="code">               <div class="highlight"><pre>
         <span class="nx">configure</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">config</span><span class="p">,</span> <span class="nx">command</span><span class="p">,</span> <span class="nx">done</span><span class="p">)</span> <span class="p">{</span>

@@ -1,7 +1,7 @@
 var docco = require("docco");
 
 // ###anvil.docco
-// author: Jonathan Creamer
+// Jonathan Creamer
 var doccoFactory = function( _, anvil ) {
     return anvil.plugin({
         name: "anvil.docco",
@@ -12,7 +12,7 @@ var doccoFactory = function( _, anvil ) {
         output: "./docs/",
         fileList: [],
         commander: [
-            ["-d, --docco", "document all files"]
+            ["-d, --docco", "document all files, output them to /docs"]
         ],
         // Configure the plugin
         configure: function(config, command, done) {
