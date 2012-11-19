@@ -59,9 +59,10 @@ var doccoFactory = function( _, anvil ) {
                     // REJECTION!
                     jsFiles = _.reject( jsFiles, function(file) {
                         return _.any( this.fileList, function(excluded) {
-                            return excluded.fullPath === file.fullPath;
-                        });
-                    });
+                            return excluded === file.fullPath || 
+                                (~file.fullPath.indexOf(excluded));
+                        }, this);
+                    }, this);
                 }
             }
             

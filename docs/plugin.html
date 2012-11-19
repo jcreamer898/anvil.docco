@@ -60,9 +60,10 @@
 </pre></div>             </td>           </tr>                               <tr id="section-7">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-7">&#182;</a>               </div>               <p>REJECTION!</p>             </td>             <td class="code">               <div class="highlight"><pre>
                     <span class="nx">jsFiles</span> <span class="o">=</span> <span class="nx">_</span><span class="p">.</span><span class="nx">reject</span><span class="p">(</span> <span class="nx">jsFiles</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">file</span><span class="p">)</span> <span class="p">{</span>
                         <span class="k">return</span> <span class="nx">_</span><span class="p">.</span><span class="nx">any</span><span class="p">(</span> <span class="k">this</span><span class="p">.</span><span class="nx">fileList</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">excluded</span><span class="p">)</span> <span class="p">{</span>
-                            <span class="k">return</span> <span class="nx">excluded</span><span class="p">.</span><span class="nx">fullPath</span> <span class="o">===</span> <span class="nx">file</span><span class="p">.</span><span class="nx">fullPath</span><span class="p">;</span>
-                        <span class="p">});</span>
-                    <span class="p">});</span>
+                            <span class="k">return</span> <span class="nx">excluded</span> <span class="o">===</span> <span class="nx">file</span><span class="p">.</span><span class="nx">fullPath</span> <span class="o">||</span> 
+                                <span class="p">(</span><span class="o">~</span><span class="nx">file</span><span class="p">.</span><span class="nx">fullPath</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">excluded</span><span class="p">));</span>
+                        <span class="p">},</span> <span class="k">this</span><span class="p">);</span>
+                    <span class="p">},</span> <span class="k">this</span><span class="p">);</span>
                 <span class="p">}</span>
             <span class="p">}</span>
             
